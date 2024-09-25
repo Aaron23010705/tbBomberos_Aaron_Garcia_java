@@ -45,7 +45,6 @@ public class Bomberos extends javax.swing.JFrame {
         btnActualizar = new javax.swing.JButton();
         btnEliminar = new javax.swing.JButton();
         btnLimpiar = new javax.swing.JButton();
-        txtBuscar = new javax.swing.JTextField();
         txtNombreBombero = new javax.swing.JTextField();
         lblfecha = new javax.swing.JLabel();
         lblMotivo = new javax.swing.JLabel();
@@ -53,7 +52,6 @@ public class Bomberos extends javax.swing.JFrame {
         tbBomberos = new javax.swing.JTable();
         txtCorreoBombero = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
-        btnBuscar = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
 
@@ -70,6 +68,7 @@ public class Bomberos extends javax.swing.JFrame {
         });
         jPanel1.add(txtEdadBombero, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 70, 334, 30));
 
+        lblDescripcion.setFont(new java.awt.Font("Segoe UI Historic", 3, 12)); // NOI18N
         lblDescripcion.setText("Peso");
         jPanel1.add(lblDescripcion, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 120, -1, 37));
         jPanel1.add(txtPesoBombero, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 120, 330, 30));
@@ -89,15 +88,18 @@ public class Bomberos extends javax.swing.JFrame {
         btnLimpiar.setBackground(new java.awt.Color(255, 255, 102));
         btnLimpiar.setText("Limpiar");
         jPanel1.add(btnLimpiar, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 210, -1, -1));
-        jPanel1.add(txtBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 250, 294, 28));
         jPanel1.add(txtNombreBombero, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 20, 334, 30));
 
+        lblfecha.setFont(new java.awt.Font("Segoe UI Historic", 3, 12)); // NOI18N
         lblfecha.setText("Nombre");
         jPanel1.add(lblfecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 30, -1, -1));
 
+        lblMotivo.setFont(new java.awt.Font("Segoe UI Historic", 3, 12)); // NOI18N
         lblMotivo.setText("Edad");
         jPanel1.add(lblMotivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 80, -1, -1));
 
+        tbBomberos.setBackground(new java.awt.Color(255, 204, 153));
+        tbBomberos.setFont(new java.awt.Font("Segoe UI Semilight", 2, 13)); // NOI18N
         tbBomberos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -120,12 +122,9 @@ public class Bomberos extends javax.swing.JFrame {
         });
         jPanel1.add(txtCorreoBombero, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 160, 330, 30));
 
+        jLabel1.setFont(new java.awt.Font("Segoe UI Historic", 3, 12)); // NOI18N
         jLabel1.setText("Correo");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 170, -1, -1));
-
-        btnBuscar.setBackground(new java.awt.Color(255, 255, 102));
-        btnBuscar.setText("Buscar");
-        jPanel1.add(btnBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 250, -1, 30));
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 110, -1, -1));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/bomberos.png"))); // NOI18N
@@ -192,7 +191,6 @@ public class Bomberos extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton btnActualizar;
-    public javax.swing.JButton btnBuscar;
     public javax.swing.JButton btnEliminar;
     public javax.swing.JButton btnGuardar;
     public javax.swing.JButton btnLimpiar;
@@ -205,7 +203,6 @@ public class Bomberos extends javax.swing.JFrame {
     public javax.swing.JLabel lblMotivo;
     public javax.swing.JLabel lblfecha;
     public javax.swing.JTable tbBomberos;
-    public javax.swing.JTextField txtBuscar;
     public javax.swing.JTextField txtCorreoBombero;
     public javax.swing.JTextField txtEdadBombero;
     public javax.swing.JTextField txtNombreBombero;

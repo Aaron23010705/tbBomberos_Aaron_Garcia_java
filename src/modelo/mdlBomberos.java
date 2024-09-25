@@ -178,34 +178,7 @@ public int getPeso_bombero() {
         }
     }
 
-    public void Buscar(JTable tabla, JTextField miTextField) {
-        //Creamos una variable igual a ejecutar el método de la clase de conexión
-        Connection conexion = ClaseConexion.getConexion();
-
-        //Definimos el modelo de la tabla
-        DefaultTableModel modelo = new DefaultTableModel();
-        modelo.setColumnIdentifiers(new Object[]{"UUID_bombero", "nombre_bombero", "edad_bombero", "peso_bombero", "correo_bombero"});
-        try {
-            String sql = "SELECT * FROM tbBomberos WHERE nombre_bombero LIKE ? || '%'";
-            PreparedStatement buscarBombero = conexion.prepareStatement(sql);
-            buscarBombero.setString(1, miTextField.getText());
-            ResultSet rs = buscarBombero.executeQuery();
-
-            while (rs.next()) {
-                //Llenamos el modelo por cada vez que recorremos el resultSet
-                modelo.addRow(new Object[]{ rs.getString("nombre_bombero"), rs.getString("edad_bombero"), rs.getString("peso_bombero"), rs.getString("correo_bombero")});
-            }
-
-            
-            //Asignamos el nuevo modelo lleno a la tabla
-            tabla.setModel(modelo);
-            tabla.getColumnModel().getColumn(0).setMinWidth(0);
-            tabla.getColumnModel().getColumn(0).setMaxWidth(0);
-            tabla.getColumnModel().getColumn(0).setWidth(0);
-        } catch (Exception e) {
-            System.out.println("Este es el error en el modelo, metodo de buscar " + e);
-        }
-    }
+   
 
     public void limpiar(Bomberos Vista) {
         Vista.txtNombreBombero.setText("");

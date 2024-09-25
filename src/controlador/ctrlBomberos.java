@@ -32,7 +32,6 @@ public class ctrlBomberos implements MouseListener, KeyListener {
         vista.btnActualizar.addMouseListener(this);
         vista.btnEliminar.addMouseListener(this);
         vista.btnLimpiar.addMouseListener(this);
-        vista.txtBuscar.addMouseListener(this);
         vista.tbBomberos.addMouseListener(this);
 
         Modelo.Mostrar(vista.tbBomberos);
@@ -187,12 +186,7 @@ public class ctrlBomberos implements MouseListener, KeyListener {
         if (e.getSource() == Vista.tbBomberos) {
             Modelo.cargarDatosTabla(Vista);
         }
-        
-          if (e.getSource()==Vista.btnBuscar){
-             
-          Modelo.Buscar(Vista.tbBomberos, Vista.txtBuscar);
-                    Modelo.Mostrar(Vista.tbBomberos);
-       }
+  
      
 
     }
