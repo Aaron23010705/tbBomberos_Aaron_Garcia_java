@@ -225,7 +225,7 @@ public int getPeso_bombero() {
             String Nombre = Vista.tbBomberos.getValueAt(filaSeleccionada, 1).toString();
             String Edad = Vista.tbBomberos.getValueAt(filaSeleccionada, 2).toString();
             String Peso = Vista.tbBomberos.getValueAt(filaSeleccionada, 3).toString();
-            String Correo = Vista.tbBomberos.getValueAt(filaSeleccionada, 3).toString();
+            String Correo = Vista.tbBomberos.getValueAt(filaSeleccionada, 4).toString();
 
 
             // Establece los valores en los campos de texto

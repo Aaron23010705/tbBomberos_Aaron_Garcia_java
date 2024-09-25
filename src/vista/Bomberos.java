@@ -54,6 +54,8 @@ public class Bomberos extends javax.swing.JFrame {
         txtCorreoBombero = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         btnBuscar = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -66,21 +68,25 @@ public class Bomberos extends javax.swing.JFrame {
                 txtEdadBomberoActionPerformed(evt);
             }
         });
-        jPanel1.add(txtEdadBombero, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 70, 334, 40));
+        jPanel1.add(txtEdadBombero, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 70, 334, 30));
 
         lblDescripcion.setText("Peso");
         jPanel1.add(lblDescripcion, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 120, -1, 37));
         jPanel1.add(txtPesoBombero, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 120, 330, 30));
 
+        btnGuardar.setBackground(new java.awt.Color(255, 255, 102));
         btnGuardar.setText("Guardar");
         jPanel1.add(btnGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 210, -1, -1));
 
+        btnActualizar.setBackground(new java.awt.Color(255, 255, 102));
         btnActualizar.setText("Actualizar");
         jPanel1.add(btnActualizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 210, -1, -1));
 
+        btnEliminar.setBackground(new java.awt.Color(255, 255, 102));
         btnEliminar.setText("Eliminar");
         jPanel1.add(btnEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 210, -1, -1));
 
+        btnLimpiar.setBackground(new java.awt.Color(255, 255, 102));
         btnLimpiar.setText("Limpiar");
         jPanel1.add(btnLimpiar, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 210, -1, -1));
         jPanel1.add(txtBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 250, 294, 28));
@@ -117,8 +123,13 @@ public class Bomberos extends javax.swing.JFrame {
         jLabel1.setText("Correo");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 170, -1, -1));
 
+        btnBuscar.setBackground(new java.awt.Color(255, 255, 102));
         btnBuscar.setText("Buscar");
         jPanel1.add(btnBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 250, -1, 30));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 110, -1, -1));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/bomberos.png"))); // NOI18N
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, -30, 550, 470));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -186,6 +197,8 @@ public class Bomberos extends javax.swing.JFrame {
     public javax.swing.JButton btnGuardar;
     public javax.swing.JButton btnLimpiar;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     public javax.swing.JLabel lblDescripcion;
